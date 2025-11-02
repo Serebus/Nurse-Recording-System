@@ -14,7 +14,7 @@ namespace NurseRecordingSystem.Test.ControllerTest.NurseControllersTest
         private readonly Mock<IViewAppointmentSchedule> _mockViewService;
         private readonly Mock<IUpdateAppointmentSchedule> _mockUpdateService;
         private readonly Mock<IDeleteAppointmentSchedule> _mockDeleteService;
-        private readonly AppointmentScheduleController _controller;
+        private readonly NurseAppointmentScheduleController _controller;
 
         public AppointmentScheduleControllerTest()
         {
@@ -23,7 +23,7 @@ namespace NurseRecordingSystem.Test.ControllerTest.NurseControllersTest
             _mockViewService = new Mock<IViewAppointmentSchedule>();
             _mockUpdateService = new Mock<IUpdateAppointmentSchedule>();
             _mockDeleteService = new Mock<IDeleteAppointmentSchedule>();
-            _controller = new AppointmentScheduleController(
+            _controller = new NurseAppointmentScheduleController(
                 _mockCreateService.Object,
                 _mockViewListService.Object,
                 _mockViewService.Object,
