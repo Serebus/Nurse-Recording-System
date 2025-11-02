@@ -12,7 +12,7 @@ namespace NurseRecordingSystem.Class.Services.Authentication
         // Dependency Injection of IConfiguration
         public SessionTokenService(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection")
+            _connectionString = configuration.GetSection("ConnectionStrings:DefaultConnection").Value
                 ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
         }
 
