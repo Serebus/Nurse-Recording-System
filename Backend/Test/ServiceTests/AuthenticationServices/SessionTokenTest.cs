@@ -42,13 +42,12 @@ namespace NurseRecordingSystem.Test.ServiceTests.AuthenticationServices
             Assert.NotNull(service);
         }
 
-        // Note: Integration tests for database operations would require a test database
-        // The following are unit tests that would mock the database calls
+        // unit tests that would mock the database calls
 
         // [Fact]
         // public async Task CreateSessionAsync_ShouldReturnSessionTokenDTO_WhenSuccessful()
         // {
-        //     // This would require mocking SqlConnection, SqlCommand, etc.
+        //     // mocking SqlConnection, SqlCommand, etc.
         //     // or using an in-memory database for integration testing
         // }
 
