@@ -44,7 +44,6 @@ namespace NurseRecordingSystem.Test.ServiceTests.AuthenticationServices
 
         // Note: Integration tests for database operations would require a test database
         // The following are unit tests that would mock the database calls
-        // For now, we'll create stubs that show the structure
 
         // [Fact]
         // public async Task CreateSessionAsync_ShouldReturnSessionTokenDTO_WhenSuccessful()

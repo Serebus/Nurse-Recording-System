@@ -15,7 +15,7 @@ namespace NurseRecordingSystem.Class.Services.Authentication
         //Dependency Injection of IConfiguration and IUserRepository
         public UserAuthenticationService(IConfiguration configuration, IUserRepository userRepository)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection")
+            _connectionString = configuration.GetSection("ConnectionStrings:DefaultConnection").Value
                 ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             _userRepository = userRepository
                 ?? throw new ArgumentNullException(nameof(userRepository),"UserAuth Service cannot be null");
